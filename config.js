@@ -26,10 +26,11 @@ module.exports = {
   
   
   /**
-   * Plugins modifying post
+   * Plugins to decorate/modify post
    */
   plugins: [
-    'sentiment'
+    // 'sentiment',
+    // 'profanity'
   ],
   
   
