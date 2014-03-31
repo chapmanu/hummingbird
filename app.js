@@ -10,7 +10,10 @@ var H = {
   config: require('./config.js'),
   
   // service config
-  services: {}
+  services: {},
+  
+  // plugins
+  plugins: []
   
 };
 
@@ -18,6 +21,12 @@ var H = {
 // Load services
 fs.readdirSync('./services').forEach(function(s) {
   H.services[s.replace('.js','')] = require('./services/'+s);
+});
+
+
+// Load plugins
+H.config.plugins.forEach(function(plugin) {
+  H.plugins.push(require('./plugins/'+plugin+'.js'));
 });
 
 

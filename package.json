@@ -1,6 +1,6 @@
 {
   "name": "hummingbird",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "It's whatever you want it to be.",
   "main": "app.js",
   "scripts": {
@@ -22,10 +22,11 @@
   },
   "homepage": "https://github.com/chapmanu/hummingbird",
   "dependencies": {
-    "hummingbird-wordpress": "0.0.0",
-    "hummingbird-facebook": "0.0.0",
-    "hummingbird-twitter": "0.0.0",
-    "hummingbird-instagram": "0.0.0",
-    "hummingbird-core": "0.0.1"
+    "hummingbird-wordpress": "0.0.1",
+    "hummingbird-facebook": "0.0.1",
+    "hummingbird-twitter": "0.0.1",
+    "hummingbird-instagram": "0.0.1",
+    "hummingbird-core": "0.0.3",
+    "sediment": "^0.9.2"
   }
 }
