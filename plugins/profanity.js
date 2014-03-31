@@ -10,6 +10,9 @@ var WebPurify = require('webpurify');
  */
 
 
+
+/** Configure */
+
 var wp = new WebPurify({
     api_key: 'my_api_key'
     //, endpoint:   'us'  // Optional, available choices: 'eu', 'ap'. Default: 'us'.
@@ -18,6 +21,7 @@ var wp = new WebPurify({
 
 
 
+/** Run */
 module.exports = function(post, cb) {
   wp.return(post.text(), function(err, profanity) {
     
