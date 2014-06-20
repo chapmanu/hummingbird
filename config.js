@@ -26,6 +26,24 @@ module.exports = {
   
   
   /**
+   * Absolute path of SSL cert files
+   * Use if https = true
+   */
+  ssl: {
+    key:  '/path/to/key.pem',
+    cert: '/path/to/cert.crt'
+  },
+  
+  
+  
+  /**
+   * Enable HTTPS
+   */
+  https: false,
+  
+  
+  
+  /**
    * Plugins to decorate/modify post
    */
   plugins: [
