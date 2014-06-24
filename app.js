@@ -36,8 +36,9 @@ global.hummingbird = H;
 
 
 // Set Process ENV
-process.env['PORT']     = hummingbird.config.port;
-process.env['NODE_ENV'] = hummingbird.config.environment;
+hummingbird.config.port        = process.env['PORT']     || hummingbird.config.port;
+hummingbird.config.environment = process.env['NODE_ENV'] || hummingbird.config.environment;
+
 
 // Start the core
 require('hummingbird-core');

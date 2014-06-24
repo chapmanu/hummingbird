@@ -1,6 +1,6 @@
 {
   "name": "hummingbird-node",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "It's whatever you want it to be.",
   "main": "app.js",
   "scripts": {
