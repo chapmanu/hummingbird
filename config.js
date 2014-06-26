@@ -19,7 +19,7 @@ module.exports = {
   
   /**
    * Public host hummingbird is running on
-   * Used so services can make incoming post request
+   * Sent to services requiring a callback url for updates
    */
   host: '127.0.0.1',
   
