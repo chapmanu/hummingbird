@@ -24,7 +24,7 @@
   "dependencies": {
     "hummingbird-wordpress": "0.0.6",
     "hummingbird-facebook": "0.0.5",
-    "hummingbird-twitter": "0.0.7",
+    "hummingbird-twitter": "0.0.8",
     "hummingbird-instagram": "0.0.6",
     "hummingbird-core": "0.0.8",
     "sediment": "^0.9.2",
