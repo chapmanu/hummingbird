@@ -1,10 +1,7 @@
 /**
- * Hummingbird configuration
+ * Hummingbird configuration [Staging]
  * 
- * This is the default/general configuration. Any options set in
- * the environment configuration files will override settings here.
- * To run an environment besides development, run hummingbird with
- * NODE_ENV=environment node app.js.
+ * NODE_ENV=staging node app.js
  */
 module.exports = {
   
@@ -22,12 +19,12 @@ module.exports = {
    */
 
   // Port
-  port: 1337,
+  //port: 1337,
   
   // Hostname
   // Can be IP address or domain name, but leave out the scheme (no http/https://)
   // Domain example: 'myhummingbirdapp.supercoolserver.com'
-  host: '127.0.0.1',
+  //host: '127.0.0.1',
   
   
   /**
@@ -44,13 +41,13 @@ module.exports = {
    */
   
   // Enable SSL
-  https: false,
+  //https: false,
   
   // Absolute paths to key and cert
-  ssl: {
-    key:  '/path/to/key.pem',
-    cert: '/path/to/cert.crt'
-  },
+  //ssl: {
+  //  key:  '/path/to/key.pem',
+  //  cert: '/path/to/cert.crt'
+  //},
   
   
   
@@ -81,10 +78,10 @@ module.exports = {
    *                A boolean true or false as well as an array of matched words
    *                are returned.
    */
-  plugins: {
-    sentiment: false,
-    profanity: false
-  },
+  //plugins: {
+  //  sentiment: false,
+  //  profanity: false
+  //},
   
   
   
@@ -116,7 +113,7 @@ module.exports = {
    */
 
   // Active adapter
-  adapter: 'disk',
+  //adapter: 'disk',
   
   adapters: {
     
@@ -124,18 +121,18 @@ module.exports = {
     //
     // There are no current settings for the disk adapter.
     // Please leave this null.
-    disk: null,
+    //disk: null,
     
     
     // Redis
     //
     // These are default. If left blank, these values will automatically
     // be used.
-    redis: {
-      port:     6379,
-      host:    '127.0.0.1',
-      options:  null
-    },
+    //redis: {
+    //  port:     6379,
+    //  host:    '127.0.0.1',
+    //  options:  null
+    //},
     
   },
   
@@ -166,18 +163,18 @@ module.exports = {
     /**
      * Facebook
      */
-    facebook: {
-      
-      // Is this service active?
-      active: false,
-      
-      // app_id & app_secret required. access_token, if left blank, will be generated.
-      credentials: {
-        app_id:       '',
-        app_secret:   '',
-        access_token: null
-      }
-    },
+    // facebook: {
+    //
+    //   // Is this service active?
+    //   active: false,
+    //
+    //   // app_id & app_secret required. access_token, if left blank, will be generated.
+    //   credentials: {
+    //     app_id:       '',
+    //     app_secret:   '',
+    //     access_token: null
+    //   }
+    // },
     
     
     
@@ -185,19 +182,19 @@ module.exports = {
     /**
      * Twitter
      */
-    twitter: {
-      
-      // Is this service active?
-      active: false,
-      
-      // all credentials are required
-      credentials: {
-        consumer_key:         '',
-        consumer_secret:      '',
-        access_token:         '',
-        access_token_secret:  ''
-      }
-    },
+    // twitter: {
+    //
+    //   // Is this service active?
+    //   active: false,
+    //
+    //   // all credentials are required
+    //   credentials: {
+    //     consumer_key:         '',
+    //     consumer_secret:      '',
+    //     access_token:         '',
+    //     access_token_secret:  ''
+    //   }
+    // },
     
     
     
@@ -205,17 +202,17 @@ module.exports = {
     /**
      * Instagram
      */
-    instagram: {
-      
-      // Is this service active?
-      active: false,
-      
-      // all credentials required
-      credentials: {
-        client_id:     '',
-        client_secret: ''
-      }
-    },
+    // instagram: {
+    //
+    //   // Is this service active?
+    //   active: false,
+    //
+    //   // all credentials required
+    //   credentials: {
+    //     client_id:     '',
+    //     client_secret: ''
+    //   }
+    // },
     
     
     
@@ -223,12 +220,12 @@ module.exports = {
     /**
      * Wordpress
      */
-    wordpress: {
-      
-      // Is this service active?
-      active: false
-      
-    }
+    // wordpress: {
+    //
+    //   // Is this service active?
+    //   active: false
+    //
+    // }
     
     
   }
