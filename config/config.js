@@ -95,6 +95,45 @@ module.exports = {
   
   
   
+  /**
+   * Interfaces
+   *
+   * The interface deals with both incoming REST commands,
+   * and the outbound post once it is processed. This is separate
+   * from the adapter.
+   *
+   * Currently, only HTTP/S can be used for incoming commands, and
+   * only redis can be used for outbout posts. HTTP settings are the
+   * same as configured above.
+   */
+  
+  // active interfaces
+  // interface: {
+  //   in:  'http',
+  //   out: 'redis'
+  // },
+  
+  interfaces: {
+    
+    // Redis
+    //
+    // These are default. If left blank, these values will automatically
+    // be used.
+    redis: {
+      port:     6379,
+      host:    '127.0.0.1',
+      options:  null
+    }
+    
+  },
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -135,7 +174,7 @@ module.exports = {
       port:     6379,
       host:    '127.0.0.1',
       options:  null
-    },
+    }
     
   },
   
