@@ -1,2 +1,2 @@
 clean:
-	rm .tmp/disk.db
+	rm .tmp/disk_connection.db
