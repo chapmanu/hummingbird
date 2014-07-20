@@ -267,6 +267,19 @@ module.exports = {
       // Is this service active?
       active: false
       
+    },
+    
+    
+    
+    
+    /**
+     * Youtube
+     */
+    youtube: {
+      
+      // Is this service active?
+      active: false
+      
     }
     
     
