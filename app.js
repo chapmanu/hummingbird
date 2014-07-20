@@ -10,6 +10,4 @@
   
   console.log('Initializing Hummingbird...');
   app.initialize();
-  
-  console.log(HB);
 })();
