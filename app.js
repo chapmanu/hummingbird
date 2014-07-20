@@ -9,5 +9,5 @@
   }
   
   console.log('Initializing Hummingbird...');
-  app.initialize();
+  app.boot();
 })();
