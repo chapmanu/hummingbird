@@ -1,7 +1,7 @@
 (function() {
-  var hummingbird;
+  var app;
   try {
-    hummingbird = require('./lib');
+    app = require('./lib');
   } catch (e) {
     console.log('An error occured while starting hummingbird.');
     console.log(e);
@@ -9,5 +9,7 @@
   }
   
   console.log('Initializing Hummingbird...');
-  hummingbird.initialize();
+  app.initialize();
+  
+  console.log(HB);
 })();
