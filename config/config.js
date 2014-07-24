@@ -214,7 +214,7 @@ module.exports = {
       credentials: {
         app_id:       '',
         app_secret:   '',
-        access_token: null
+        access_token: ''
       }
     },
     
