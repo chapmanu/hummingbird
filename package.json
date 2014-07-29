@@ -1,6 +1,6 @@
 {
   "name": "hummingbird-node",
-  "version": "0.2.2",
+  "version": "0.2.6",
   "description": "It's whatever you want it to be.",
   "main": "app.js",
   "scripts": {
@@ -37,6 +37,7 @@
     "fbgraph": "^0.2.10",
     "express": "^4.6.1",
     "body-parser": "^1.4.3",
-    "async": "^0.9.0"
+    "async": "^0.9.0",
+    "sails-memory": "^0.10.0-rc2"
   }
 }

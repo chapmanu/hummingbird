@@ -146,18 +146,26 @@ module.exports = {
    * subscriptions exactly where it was when it stopped. Hummingbird
    * uses waterline as its ORM.
    *
-   * Currently, the two available adapters are:
+   * Currently, the available adapters are:
    *   - 'redis'
-   *   - 'disk'.
+   *   - 'disk'
+   *   - 'memory' (default)
    *
    * Data saved using the 'disk' adapter is written to .tmp/disk.db,
    * and can be erased by running the command 'make clean'.
    */
 
   // Active adapter
-  adapter: 'disk',
+  adapter: 'memory',
   
   adapters: {
+    
+    // Memory
+    //
+    // There are no current settings for the memory adapter.
+    // Please leave this null.
+    memory: null,
+    
     
     // Disk
     //
@@ -214,7 +222,7 @@ module.exports = {
       credentials: {
         app_id:       '',
         app_secret:   '',
-        access_token: null
+        access_token: ''
       }
     },
     
