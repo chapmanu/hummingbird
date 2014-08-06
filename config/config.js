@@ -286,7 +286,14 @@ module.exports = {
     youtube: {
       
       // Is this service active?
-      active: false
+      active: false,
+      
+      // all credentials required
+      credentials: {
+        client_id:     '',
+        client_secret: '',
+        redirect_uri:  ''
+      }
       
     }
     
