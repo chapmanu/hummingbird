@@ -286,13 +286,13 @@ module.exports = {
     youtube: {
       
       // Is this service active?
-      active: false,
+      active: true,
       
       // all credentials required
       credentials: {
-        client_id:     '',
-        client_secret: '',
-        redirect_uri:  ''
+        client_id:     '1027891577048-u4q1ih8ehneaidn929nvjtsagnsc06o7.apps.googleusercontent.com',
+        client_secret: 'CcD5_FAsm-J-i7KmFdmpA6Wi',
+        redirect_uri:  'https://localhost/oauth2callback'
       }
       
     }
