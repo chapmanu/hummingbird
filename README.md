@@ -7,11 +7,11 @@ ATTENTION: This app is undergoing serious refactoring from an independent applic
 ## What is Hummingbird? ##
 Hummingbird is an independent node.js application that makes connecting to/managing real-time social media interactions simple. Real-time updates are processed by hummingbird and then placed into a Redis queue for whatever you want to do with them.
 
-### Supported Services ###
-* [Twitter](#twitter)
-* [Facebook](#facebook)
-* [Instagram](#instagram)
-* [Wordpress](#wordpress)
+#### Supported Services ####
+* Twitter
+* Facebook
+* Instagram
+* Wordpress
 
 
 # Using Hummingbird #
@@ -20,7 +20,10 @@ Hummingbird is manipulated strictly through a REST api, and each interaction mus
 
 * [Accounts](#accounts)
 * * [Create](#create)
+* * [Destroy](#destroy)
 * [Keywords](#keywords)
+* * [Create](#create-1)
+* * [Destroy](#destroy-1)
 * [Posts](#posts)
 * * [Example](#example-post)
 * [Deployment](#deployment)
