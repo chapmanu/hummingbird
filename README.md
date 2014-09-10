@@ -21,13 +21,13 @@ Documentation is ongoing and incomplete, but you can get details in the [wiki](h
 Hummingbird is manipulated strictly through a REST api, and each interaction must be defined by the service requesting a modification.
 
 * [Accounts](#accounts)
-* * [Create](#create)
-* * [Destroy](#destroy)
+  * [Create](#create)
+  * [Destroy](#destroy)
 * [Keywords](#keywords)
-* * [Create](#create-1)
-* * [Destroy](#destroy-1)
+  * [Create](#create-1)
+  * [Destroy](#destroy-1)
 * [Posts](#posts)
-* * [Example](#example-post)
+  * [Example](#example-post)
 * [Deployment](#deployment)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "hummingbird-node",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Stupidly simple social media streaming for Node.js",
   "main": "app.js",
   "scripts": {
