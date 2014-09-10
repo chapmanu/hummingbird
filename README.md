@@ -14,12 +14,19 @@ Hummingbird is an independent node.js application that makes connecting to/manag
 * [Wordpress](#wordpress)
 
 
-## Using Hummingbird ##
+# Using Hummingbird #
 
 Hummingbird is manipulated strictly through a REST api, and each interaction must be defined by the service requesting a modification.
 
+* [Accounts](#accounts)
+* * [Create](#create)
+* [Keywords](#keywords)
+* [Posts](#posts)
+* * [Example](#example-post)
+* [Deployment](#deployment)
 
-### Accounts ###
+
+## Accounts ##
 
 Accounts for social media can be tracked my making REST calls to the `/accounts` endpoint.
 Supported by twitter, facebook, instagram
@@ -35,7 +42,7 @@ Supported by twitter, facebook, instagram
 * `service=twitter` - (REQUIRED)
 * `service_id=123456789` - (REQUIRED) Must be the numerical ID of the twitter account
 
-### Keywords ###
+## Keywords ##
 
 Keywords are equivalent to hashtags without the hashtag, just the raw content.
 Supported by twitter, facebook, instagram.
@@ -52,7 +59,7 @@ Supported by twitter, facebook, instagram.
 
 
 
-### Posts ###
+## Posts ##
 
 When a real-time update is received, Hummingbird generates a post and stores it on your Redis queue.
 
@@ -68,7 +75,52 @@ Hummingbird posts normalize the updates into a single, consistent JSON format, r
   timestamp:    '2014-03-19T10:08:00.070Z',                       // string, ISO 8601 timestamp of tweet
   text:         'text @mention #keyword text',                    // string, tweet text content
   external_uri: 'http://service.com/service_id/status/123456790', // string, twitter tweet url
-  ...
+  
+  author: {
+    service:      'twitter',
+    service_id:   '1234567890',                    // string, id of tweet author
+    user_name:    'cool_dude23',                   // string, tweet author username
+    display_name: 'Mr. Cool Dude',                 // string, tweet author formal name
+    description:  'I am a cool dude.',             // string, tweet author description
+    avatar:       'http://service.com/1234567.jpg' // string, url to twitter user thumbnail
+  },
+  
+  mentions: [
+    {
+      service:      'twitter',
+      service_id:   '1234567',      // string, id of mentioned account
+      user_name:    'cool_dude23',  // string, the username of mentioned account
+      display_name: 'Mr. Cool Dude' // string, the formal name of the mentioned account
+    }
+  ],
+  
+  keywords: [
+    {
+      phrase: 'chapmanu' // string, without #, of hashtags in tweet
+    }
+  ],
+  
+  urls: [
+    {
+      domain:         'google.com',             // string, the specific domain of the expanded URL
+      link:           'http://google.com/news', // string, the full expanded url
+      shortened_link: 'http://g.co/news'        // string, shortened link in tweet text
+    }
+  ],
+  
+  photos: [
+    {
+      image: 'http://service.com/some/cool/image/12345.jpg' // The raw url to the largest image in tweet
+    }
+  ],
+  
+  source: {
+    service:      'twitter',
+    name:         'Twitter',
+    description:  'Social networking and microblogging service utilising instant messaging, SMS or a web interface.',
+    domain:       'twitter.com',
+    external_uri: 'https://twitter.com/'
+  }
 }
 ```
 
