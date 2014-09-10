@@ -1,7 +1,7 @@
 {
   "name": "hummingbird-node",
-  "version": "0.2.8",
-  "description": "It's whatever you want it to be.",
+  "version": "0.3.0",
+  "description": "Stupidly simple social media streaming for Node.js",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,14 @@
   "keywords": [
     "hummingbird",
     "streaming",
-    "socialmedia"
+    "socialmedia",
+    "twitter",
+    "facebook",
+    "instagram",
+    "wordpress"
+    "social",
+    "media",
+    "stream"
   ],
   "author": "Chapman University",
   "license": "MIT",
