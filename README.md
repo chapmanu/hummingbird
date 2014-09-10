@@ -1,11 +1,13 @@
 hummingbird
 ===========
 
-ATTENTION: This app is undergoing serious refactoring from an independent application into a module you can require into your own Node apps. This module will be at https://github.com/chapmanu/hb. The documentation is ongoing and incomplete, but you can get details in the [wiki](https://github.com/chapmanu/hummingbird/wiki).
+Stupidly simple social media streaming for Node.js
 
-
-## What is Hummingbird? ##
 Hummingbird is an independent node.js application that makes connecting to/managing real-time social media interactions simple. Real-time updates are processed by hummingbird and then placed into a Redis queue for whatever you want to do with them.
+
+This README is only going to cover the basics for now, as the project is going through a bit of a refactor into [new module](https://github.com/chapmanu/hb).
+
+Documentation is ongoing and incomplete, but you can get details in the [wiki](https://github.com/chapmanu/hummingbird/wiki).
 
 #### Supported Services ####
 * Twitter
