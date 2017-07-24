@@ -1,6 +1,12 @@
 hummingbird
 ===========
 
+---
+
+### This application is no longer supported. See https://github.com/chapmanu/ira.
+
+---
+
 Stupidly simple social media streaming for Node.js
 
 Hummingbird is an independent node.js application that makes connecting to/managing real-time social media interactions simple. Real-time updates are processed by hummingbird and then placed into a Redis queue for whatever you want to do with them.
