@@ -3,7 +3,7 @@ hummingbird
 
 ---
 
-### This application is no longer supported. See https://github.com/chapmanu/ira.
+#### This application is no longer supported by Chapman University. If you are a Chapman developer, please see [the Inside Streaming application](https://github.com/chapmanu/ira).
 
 ---
 
